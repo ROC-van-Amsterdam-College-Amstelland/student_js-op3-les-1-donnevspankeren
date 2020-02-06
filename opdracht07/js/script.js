@@ -37,37 +37,33 @@ function verkeerMagRijdenStoplichtB(booleanVerkeerMagRijden){
 
 function toggleRoodLicht(){
     if(roodLichtStaatAan == false){
-        document.getElementById("left-light-top").style.backgroundColor = "red";
+        document.getElementById("left-light-top").style.backgroundColor = lichtRood;
+        document.getElementById("right-light-top").style.backgroundColor = lichtUit;
         roodLichtStaatAan = true;
         //JOUW CODE HIER
+        document.getElementById("right-light-bottom").style.backgroundColor = lichtGroen;
+        document.getElementById("left-light-bottom").style.backgroundColor = lichtUit;
     }
     else{
-        document.getElementById("left-light-top").style.backgroundColor = "gray";
+        document.getElementById("right-light-top").style.backgroundColor = lichtRood;
+        document.getElementById("left-light-top").style.backgroundColor = lichtUit;
         roodLichtStaatAan = false;
         //JOUW CODE HIER
+        document.getElementById("left-light-bottom").style.backgroundColor = lichtGroen;
+        document.getElementById("right-light-bottom").style.backgroundColor = lichtUit;
+
     }
 }
 
 function toggleOranjeLicht(){
     if(oranjeLichtStaatAan == false){
-        document.getElementById("left-light-middle").style.backgroundColor = "orange";
+        document.getElementById("left-light-middle").style.backgroundColor = lichtOranje;
         oranjeLichtStaatAan = true;
+        document.getElementById("right-light-middle").style.backgroundColor = lichtUit;
     }
     else{
-        document.getElementById("left-light-middle").style.backgroundColor = "gray";
+        document.getElementById("left-light-middle").style.backgroundColor = lichtUit;
         oranjeLichtStaatAan = false;
-    }
-}
-
-function toggleGroenLicht(){
-    if(groenLichtStaatAan == false){
-        document.getElementById("left-light-bottom").style.backgroundColor = "green";
-        groenLichtStaatAan = true;
-        //JOUW CODE HIER
-    }
-    else{
-        document.getElementById("left-light-bottom").style.backgroundColor = "gray";
-        groenLichtStaatAan = false;
-        //JOUW CODE HIER
+        document.getElementById("right-light-middle").style.backgroundColor = lichtOranje
     }
 }
