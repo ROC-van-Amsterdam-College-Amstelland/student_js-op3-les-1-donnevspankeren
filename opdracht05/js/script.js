@@ -24,20 +24,24 @@ function toggleRoodLicht(){
 }
 
 function toggleOranjeLicht(){
-    if(document.getElementById("light-middle").style.backgroundColor == "gray"){
+    if(oranjeLichtStaatAan == false){
         document.getElementById("light-middle").style.backgroundColor = "orange"
+        oranjeLichtStaatAan = true;
     }
     else{
         document.getElementById("light-middle").style.backgroundColor = "gray";
+        orangeLichtStaatAan = false;
     }
 }
 
 function toggleGroenLicht(){
-    if(document.getElementById("light-bottom").style.backgroundColor == "gray"){
+    if(groenLichtStaatAan == false){
         document.getElementById("light-bottom").style.backgroundColor = "green";
+        groenLichtStaatAan = true
     }
     else{
         document.getElementById("light-bottom").style.backgroundColor = "gray";
+        groenLichtStaatAan = false;
     }
     
 }
